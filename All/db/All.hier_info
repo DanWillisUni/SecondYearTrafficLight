@@ -1,0 +1,173 @@
+|All
+MainGreen <= LightDecoder:inst13.Main_Green
+Sensor => TLC:inst3.CarWaiting
+Sensor => sensorO.DATAIN
+Clock => TLC:inst3.clock
+Clock => Delay:inst.clock
+Reset => TLC:inst3.reset
+Reset => Delay:inst.reset
+MainRed <= LightDecoder:inst13.Main_Red
+SideRed <= LightDecoder:inst13.Side_Red
+MainAmber <= LightDecoder:inst13.Main_Amber
+SideAmber <= LightDecoder:inst13.Side_Amber
+SideGreen <= LightDecoder:inst13.Side_Green
+MainGreen7 <= LightDecoder:inst13.Main_Green
+MainRed8 <= LightDecoder:inst13.Main_Red
+SideRed9 <= LightDecoder:inst13.Side_Red
+MainAmber10 <= LightDecoder:inst13.Main_Amber
+SideAmber11 <= LightDecoder:inst13.Side_Amber
+SideGreen12 <= LightDecoder:inst13.Side_Green
+seg_a <= 7seg:inst17.seg_a
+seg_b <= 7seg:inst17.seg_b
+seg_c <= 7seg:inst17.seg_c
+seg_d <= 7seg:inst17.seg_d
+seg_e <= 7seg:inst17.seg_e
+seg_f <= 7seg:inst17.seg_f
+seg_g <= 7seg:inst17.seg_g
+sensorO <= Sensor.DB_MAX_OUTPUT_PORT_TYPE
+seg_a2 <= 7seg:inst18.seg_a
+seg_b3 <= 7seg:inst18.seg_b
+seg_c4 <= 7seg:inst18.seg_c
+seg_d5 <= 7seg:inst18.seg_d
+seg_e6 <= 7seg:inst18.seg_e
+seg_f7 <= 7seg:inst18.seg_f
+seg_g8 <= 7seg:inst18.seg_g
+
+
+|All|LightDecoder:inst13
+Main_Red <= or1.DB_MAX_OUTPUT_PORT_TYPE
+C => or1.IN0
+C => inst.IN0
+C => and2.IN2
+C => and5.IN2
+C => and6.IN2
+B => or1.IN1
+B => inst2.IN0
+B => and2.IN1
+B => or3.IN1
+B => and4.IN1
+Main_Amber <= or2.DB_MAX_OUTPUT_PORT_TYPE
+A => and1.IN0
+A => and2.IN0
+A => inst3.IN0
+A => and4.IN0
+A => and5.IN0
+Main_Green <= and3.DB_MAX_OUTPUT_PORT_TYPE
+Side_Red <= or3.DB_MAX_OUTPUT_PORT_TYPE
+Side_Amber <= or4.DB_MAX_OUTPUT_PORT_TYPE
+Side_Green <= and6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|All|TLC:inst3
+Q2 <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst18.IN0
+clock => DelayOut:inst17.Clock
+clock => DelayOut:inst16.Clock
+Done => inst18.IN1
+reset => inst27.ACLR
+reset => inst28.PRESET
+reset => inst29.PRESET
+CarWaiting => inst2.IN0
+Q1 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+8Delay <= DelayOut:inst17.Delay
+4Delay <= DelayOut:inst16.Delay
+
+
+|All|TLC:inst3|DelayOut:inst17
+Delay <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst4.CLK
+DelayIn => inst4.DATAIN
+DelayIn => inst5.IN1
+
+
+|All|TLC:inst3|DelayOut:inst16
+Delay <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst4.CLK
+DelayIn => inst4.DATAIN
+DelayIn => inst5.IN1
+
+
+|All|Delay:inst
+Q0Plus <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst1.ACLR
+reset => inst9.ACLR
+reset => inst15.ACLR
+clock => inst1.CLK
+clock => inst9.CLK
+clock => inst15.CLK
+8_Delay => inst4.IN0
+8_Delay => inst14.IN0
+4_Delay => inst10.IN1
+4_Delay => inst3.IN0
+4_Delay => inst7.IN1
+Q1Plus <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Done <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|All|7seg:inst17
+seg_a <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => DB.IN0
+A => DB10.IN0
+A => inst9.IN1
+A => inst3.IN2
+C => inst5.IN0
+C => DB.IN1
+C => inst9.IN2
+C => inst3.IN0
+C => DB18.IN0
+C => DB17.IN0
+C => DB21.IN0
+D => inst1.IN2
+D => inst10.IN2
+D => inst11.IN2
+B => -BC.IN0
+B => inst6.IN0
+B => DB10.IN1
+B => DB13.IN0
+B => DB12.IN0
+B => DB15.IN0
+B => DB19.IN1
+B => DB20.IN0
+seg_b <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+seg_c <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+seg_d <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+seg_e <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+seg_f <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+seg_g <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|All|7seg:inst18
+seg_a <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => DB.IN0
+A => DB10.IN0
+A => inst9.IN1
+A => inst3.IN2
+C => inst5.IN0
+C => DB.IN1
+C => inst9.IN2
+C => inst3.IN0
+C => DB18.IN0
+C => DB17.IN0
+C => DB21.IN0
+D => inst1.IN2
+D => inst10.IN2
+D => inst11.IN2
+B => -BC.IN0
+B => inst6.IN0
+B => DB10.IN1
+B => DB13.IN0
+B => DB12.IN0
+B => DB15.IN0
+B => DB19.IN1
+B => DB20.IN0
+seg_b <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+seg_c <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+seg_d <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+seg_e <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+seg_f <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+seg_g <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -5.115
+TNS   : -25.448
+
+Type  : Slow 1200mV 85C Model Setup 'Sensor1'
+Slack : -0.153
+TNS   : -0.400
+
+Type  : Slow 1200mV 85C Model Hold 'Sensor1'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Sensor1'
+Slack : -3.677
+TNS   : -11.031
+
+Type  : Slow 1200mV 85C Model Removal 'Sensor1'
+Slack : 3.511
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -14.224
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Sensor1'
+Slack : -3.000
+TNS   : -7.209
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -4.607
+TNS   : -22.703
+
+Type  : Slow 1200mV 0C Model Setup 'Sensor1'
+Slack : -0.046
+TNS   : -0.093
+
+Type  : Slow 1200mV 0C Model Hold 'Sensor1'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Sensor1'
+Slack : -3.414
+TNS   : -10.242
+
+Type  : Slow 1200mV 0C Model Removal 'Sensor1'
+Slack : 3.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -14.224
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Sensor1'
+Slack : -3.000
+TNS   : -7.209
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -1.787
+TNS   : -8.517
+
+Type  : Fast 1200mV 0C Model Setup 'Sensor1'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Sensor1'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Sensor1'
+Slack : -0.969
+TNS   : -2.907
+
+Type  : Fast 1200mV 0C Model Removal 'Sensor1'
+Slack : 1.400
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -16.690
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Sensor1'
+Slack : -3.000
+TNS   : -6.399
+
+------------------------------------------------------------

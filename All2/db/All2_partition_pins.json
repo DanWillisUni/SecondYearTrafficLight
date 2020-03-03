@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "MainGreen",
+					"strict" : false
+				},
+				{
+					"name" : "MainRed",
+					"strict" : false
+				},
+				{
+					"name" : "SideRed",
+					"strict" : false
+				},
+				{
+					"name" : "MainAmber",
+					"strict" : false
+				},
+				{
+					"name" : "SideAmber",
+					"strict" : false
+				},
+				{
+					"name" : "SideGreen",
+					"strict" : false
+				},
+				{
+					"name" : "MainGreen7",
+					"strict" : false
+				},
+				{
+					"name" : "MainRed8",
+					"strict" : false
+				},
+				{
+					"name" : "SideRed9",
+					"strict" : false
+				},
+				{
+					"name" : "MainAmber10",
+					"strict" : false
+				},
+				{
+					"name" : "SideAmber11",
+					"strict" : false
+				},
+				{
+					"name" : "SideGreen12",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b",
+					"strict" : false
+				},
+				{
+					"name" : "seg_c",
+					"strict" : false
+				},
+				{
+					"name" : "seg_d",
+					"strict" : false
+				},
+				{
+					"name" : "seg_e",
+					"strict" : false
+				},
+				{
+					"name" : "seg_f",
+					"strict" : false
+				},
+				{
+					"name" : "seg_g",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a2",
+					"strict" : false
+				},
+				{
+					"name" : "seg_c4",
+					"strict" : false
+				},
+				{
+					"name" : "seg_d5",
+					"strict" : false
+				},
+				{
+					"name" : "seg_e6",
+					"strict" : false
+				},
+				{
+					"name" : "seg_f7",
+					"strict" : false
+				},
+				{
+					"name" : "seg_g8",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a3",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b4",
+					"strict" : false
+				},
+				{
+					"name" : "seg_c5",
+					"strict" : false
+				},
+				{
+					"name" : "seg_d6",
+					"strict" : false
+				},
+				{
+					"name" : "seg_e7",
+					"strict" : false
+				},
+				{
+					"name" : "seg_f8",
+					"strict" : false
+				},
+				{
+					"name" : "seg_g9",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Sensor1",
+					"strict" : false
+				},
+				{
+					"name" : "Sensor2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

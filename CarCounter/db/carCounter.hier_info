@@ -1,0 +1,10 @@
+|carCounter
+CarWaiting <= or33.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst1.IN0
+Sensor2 => inst50.IN0
+Sensor1 => inst51.IN0
+Q0 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+
+
